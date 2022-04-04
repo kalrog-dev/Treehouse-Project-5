@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    display: block;
+    width: 70vw;
+    max-width: 40em;
+    margin: 2em auto;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 2px solid #888;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus {
+    outline: none;
+    border-color: darkslateblue;
+}
+
+.gallery {
+    display: grid;
+    max-width: 860px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
