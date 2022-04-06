@@ -28,7 +28,7 @@ label {
     position: absolute;
     left: 0;
     bottom: 15px;
-    color: lightgray;
+    color: #bbb;
     font-size: 1em;
     transition-property: color, font-size, transform;
     transition-duration: 0.5s;
