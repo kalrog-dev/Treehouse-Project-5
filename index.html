@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/borderEffect.css">
     <link rel="stylesheet" href="css/baguetteBox.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <input type="search" name="search" id="search" placeholder="Search" onkeyup="searchFilter()">
+    <div class="flexContainer">
+            <div class="inputContainer">
+                <input type="search" name="search" id="search" onkeyup="searchFilter()">
+                <div class="borderEffect"></div>
+                <label for="search">Search</label>
+            </div> 
+    </div>
+    
     <div class="gallery">
         <a href="photos/01.jpg" data-caption="I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
             <img src="photos/thumbnails/01.jpg" alt="Hay Bales">

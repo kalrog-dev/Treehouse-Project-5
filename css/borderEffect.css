@@ -1,0 +1,55 @@
+.flexContainer {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    height: 50px;
+}
+
+/* The position of inputContainer and input is identical.
+The children of inputContainer (input, label, .borderEffect) are placed relative to it. */
+.inputContainer {
+    position: relative;
+    width: 70vw;
+    max-width: 40em;
+    height: 50px;
+}
+
+input {
+    width: 100%;
+    min-height: 100%;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid silver;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    color: lightgray;
+    font-size: 1em;
+    transition-property: color, font-size, transform;
+    transition-duration: 0.5s;
+}
+
+input:focus ~ label {
+    color: seagreen;
+    font-size: 0.95em;
+    transform: translateY(-28px);
+}
+
+.borderEffect {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: seagreen;
+    bottom: 0;
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+
+input:focus ~ .borderEffect {
+    transform: scale(1);
+}
