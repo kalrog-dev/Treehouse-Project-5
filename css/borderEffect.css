@@ -30,6 +30,7 @@ label {
     bottom: 15px;
     color: #bbb;
     font-size: 1em;
+    pointer-events: none;
     transition-property: color, font-size, transform;
     transition-duration: 0.5s;
 }
