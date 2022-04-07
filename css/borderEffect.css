@@ -5,9 +5,8 @@
     height: 50px;
 }
 
-/* The .inputContainer and input have the same size and overlap completely.
-The "position: relative" allows the children of .inputContainer (input, label, .borderEffect)
-with absolute position to be placed relative to .inputContainer. */
+/* The .inputContainer and input have the same size and position on the web page.
+The children of .inputContainer (input, label, .borderEffect) are placed relative to it. */
 .inputContainer {
     position: relative;
     width: 70vw;
