@@ -22,7 +22,10 @@ input {
     outline: none;
     border: none;
     border-bottom: 2px solid silver;
+    
 }
+
+
 
 label {
     position: absolute;
@@ -37,6 +40,12 @@ label {
 
 input:focus ~ label {
     color: seagreen;
+    font-size: 0.95em;
+    transform: translateY(-28px);
+}
+
+.inputChanged ~ label {
+    color: #bbb;
     font-size: 0.95em;
     transform: translateY(-28px);
 }

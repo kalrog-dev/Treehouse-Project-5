@@ -15,9 +15,9 @@
 <body>
     <div class="flexContainer">
             <div class="inputContainer">
-                <input type="search" name="search" id="search" onkeyup="searchFilter()">
+                <input type="search" name="search" id="search" onkeyup="searchFilter()" onchange="onChange()" onblur="onBlur()">
                 <div class="borderEffect"></div>
-                <label for="search">Search</label>
+                <label for="search" id="label">Search</label>
             </div> 
     </div>
     
@@ -59,7 +59,8 @@
             <img src="photos/thumbnails/12.jpg" alt="Bluebells">
         </a>
     </div>
-    <script src="js/baguetteBox.min.js"></script>​
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/borderEffectFix.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
