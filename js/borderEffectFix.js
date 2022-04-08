@@ -16,11 +16,11 @@ if (input.value == ``) {
 */
 const onChange = () => {
     input.className = `inputChanged`;
-}
+};
 
 const onBlur = () => {
     // if onBlur + no input => remove class
     if (input.value == ``) {
         input.classList.remove(`inputChanged`);
     }
-}
+};
