@@ -19,3 +19,22 @@
   display: block;
   margin: 0 auto;
 }
+
+/* On hover scale effects */
+img {
+  transition-property: scale, opacity;
+}
+
+img:hover {
+  scale: 1.1;
+  transition-duration: 0.45s;
+}
+
+img:not(:hover) {
+  transition-duration: 0.7s;
+}
+
+.gallery:has(img:hover) img:not(:hover) {
+  scale: 0.925;
+  opacity: 0.75;
+}
