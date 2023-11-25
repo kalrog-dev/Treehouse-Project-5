@@ -21,16 +21,16 @@
 }
 
 /* On hover scale effects */
-img {
+.gallery img {
   transition-property: scale, opacity;
 }
 
-img:hover {
+.gallery img:hover {
   scale: 1.1;
   transition-duration: 0.45s;
 }
 
-img:not(:hover) {
+.gallery img:not(:hover) {
   transition-duration: 0.7s;
 }
 
